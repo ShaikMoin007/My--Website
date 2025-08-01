@@ -4,12 +4,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Bricolage Grotesque", sans-serif;
+
+
 }
 
 .block-1 {
-    background-color: black;
     background-image: url(https://raw.githubusercontent.com/ShaikMoin007/my-assests/refs/heads/main/black%20wavy%20bg.jpg);
+    background-color: black;
     background-size: cover;
     opacity: 0, 5;
 }
@@ -22,6 +23,7 @@
 
 .lines {
     color: white;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-size: 46px;
     text-transform: capitalize;
     margin-top: 8rem;
@@ -50,10 +52,14 @@
     justify-content: center;
     margin-top: 5rem;
 }
+.cnct-box:hover{
+    cursor: pointer;
+    
+}
 
 .contact {
-    height: 6vh;
-    width: 15vw;
+    height: auto;
+    width: auto;
     border: 2px solid white;
     border-radius: 120px;
     display: flex;
@@ -63,9 +69,11 @@
 }
 
 .call {
+    font-family: "Bricolage Grotesque", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: black;
+    padding: 10px 30px 10px 30px;
 }
 
 .container2 {
@@ -330,7 +338,7 @@
     justify-content: center;
 }
 
-.grid-left .project-card:nth-of-type(1) img{
+.grid-left .project-card:nth-of-type(1) img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -338,13 +346,13 @@
     padding-top: 80px;
 }
 
-.grid-left .project-card:nth-of-type(1) img:hover{
+.grid-left .project-card:nth-of-type(1) img:hover {
     cursor: pointer;
     height: 100%;
     width: 100%;
     object-fit: contain;
     padding: 0px;
-    
+
 }
 
 
@@ -356,7 +364,7 @@
     display: flex;
     justify-content: center;
     padding: 0px 25px;
-    
+
 }
 
 .grid-left .project-card:nth-of-type(2) img {
@@ -367,16 +375,17 @@
     object-fit: contain;
     width: 100%;
     height: 100%;
- transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
 
 
 }
-.grid-left .project-card:nth-of-type(2) img:hover{
+
+.grid-left .project-card:nth-of-type(2) img:hover {
     cursor: pointer;
     height: 100%;
     width: 100%;
     transform: scale(1.1);
-    
+
 
 }
 
@@ -397,17 +406,17 @@
     object-fit: contain;
     width: 100%;
     height: 100%;
- transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
 
 
 }
 
-.grid-right .project-card:nth-of-type(1) img:hover{
+.grid-right .project-card:nth-of-type(1) img:hover {
     cursor: pointer;
     height: 100%;
     width: 100%;
     transform: scale(1.1);
-    
+
 
 }
 
@@ -427,10 +436,531 @@
     padding-top: 80px;
 }
 
-.grid-right .project-card:nth-of-type(2) img:hover{
+.grid-right .project-card:nth-of-type(2) img:hover {
     cursor: pointer;
     height: 100%;
     width: 100%;
     object-fit: contain;
     padding: 0px;
 }
+
+.block-3 {
+    background-color: rgba(17, 17, 17, 1);
+
+}
+
+.solutions {
+    display: flex;
+    justify-content: center;
+    font-family: "Sora", sans-serif;
+}
+
+.solutions .page-title {
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 3rem;
+
+}
+
+.solutions .page-title .line1 {
+    font-weight: 300;
+    font-size: light;
+
+}
+
+.solutions .page-title .line2 {
+    font-weight: 300;
+    font-size: light;
+    text-align: center;
+}
+
+.solutions span {
+    font-weight: 600;
+    font-style: bold;
+}
+
+.container3 {
+    display: grid;
+    justify-content: center;
+}
+
+.custom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    width: 65vw;
+    margin-top: 3rem;
+    font-family: "Sora", sans-serif;
+
+
+}
+
+.custom-box {
+    background-color: #1d1d1c;
+    border: 2px solid rgba(255, 247, 233, 0.05);
+    color: white;
+}
+
+.custom-box:nth-of-type(1) {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding: 6rem 0 4rem 1rem;
+}
+
+.custom-box:nth-of-type(1) .line1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.custom-box:nth-of-type(1) .line2 {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: light;
+    padding: 1rem 2rem 0 0;
+}
+
+.custom-box:nth-of-type(2) {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding: 6rem 0 4rem 1rem;
+}
+
+.custom-box:nth-of-type(2) .line1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.custom-box:nth-of-type(2) .line2 {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: light;
+    padding: 1rem 2rem 0 0;
+}
+
+.custom-box:nth-of-type(3) {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding: 6rem 0 4rem 1rem;
+}
+
+.custom-box:nth-of-type(3) .line1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.custom-box:nth-of-type(3) .line2 {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: light;
+    padding: 1rem 2rem 0 0;
+}
+
+.custom-box:nth-of-type(4) {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding: 6rem 0 4rem 1rem;
+}
+
+.custom-box:nth-of-type(4) .line1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.custom-box:nth-of-type(4) .line2 {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: light;
+    padding: 1rem 2rem 0 0;
+}
+
+.custom-box:nth-of-type(5) {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding: 6rem 0 4rem 1rem;
+}
+
+.custom-box:nth-of-type(5) .line1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.custom-box:nth-of-type(5) .line2 {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: light;
+    padding: 1rem 2rem 0 0;
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    /* border: 2px solid red; */
+
+}
+
+.testimonials {
+    width: 80vw;
+    padding-top: 3rem;
+    font-family: "Sora", sans-serif;
+}
+
+.section-title {
+    color: white;
+    font-family: "Sora", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: capitalize;
+
+}
+
+.enterprices {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    height: auto;
+    padding-top: 2rem;
+
+}
+
+.grid-box {
+    /* border: 2px solid white; */
+    color: white;
+    margin-bottom: 3rem;
+}
+
+
+.grid-box .line1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 2rem 0 1rem 0;
+
+}
+
+
+.grid-box .line2 {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 1rem 0 1rem 0;
+
+}
+
+.grid-box .line3 {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    align-items: flex-end;
+    opacity: 0.6;
+}
+
+.grid-box .line4 {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    opacity: 0.6;
+
+}
+
+.block-4 {
+    background-image: url(https://raw.githubusercontent.com/ShaikMoin007/my-assests/refs/heads/main/8b42d70ed7dc0bc3f70ddc32686761249ba359cb.png);
+    background-color: black;
+    background-size: cover;
+    opacity: 0.9;
+    padding-bottom: 2rem;
+
+}
+
+.container5 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-title {
+    /* background-color: rgba(255, 255, 255, 1); */
+    color: white;
+    align-items: center;
+    align-content: center;
+    font-family: "Sora", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 6rem 6rem 2rem 6rem;
+}
+
+.card-title .l2 {
+    text-align: center;
+}
+
+.cnct-box-2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cnct-box-2:hover{
+    cursor: pointer;
+}
+
+.contact-2 {
+    height: auto;
+    width: auto;
+    border: 2px solid white;
+    border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+
+.call-2 {
+    font-family: "Sora", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 10px 20px 10px 20px;
+}
+
+.block-5{
+    background-color: rgba(8, 8, 10, 1);
+    height: auto;
+
+}
+
+.container5{
+color: white;
+display: flex;
+justify-content: center;
+
+}
+
+
+.contact-email{
+    width: 80vw;
+    padding-top: 2rem;
+    font-family: "Sora", sans-serif;
+}
+
+.email{
+    color: white;
+    font-family: "Sora", sans-serif;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+.email .line1{
+    font-size: 12px;
+    font-weight: 400;
+}
+.email .line2{
+    font-size: 40px;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 2rem 0 4rem 0;
+}
+
+.last-container {
+    /* border: 2px solid red; */
+    display: grid;
+    justify-content: center;
+   
+
+}
+
+.last-grid{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    height: auto;
+    width: 80vw;
+    margin-top: 3rem;
+    font-family: "Sora", sans-serif;
+}
+
+.grid-box-2 {
+    /* border: 2px solid white; */
+    color: white;
+    margin-bottom: 3rem;
+    font-family: "Sora", sans-serif;
+}
+
+
+.grid-box-2:nth-of-type(1) .line1 {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 2rem 0 0 0;
+}
+.grid-box-2:nth-of-type(2) .line1 {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 2rem 0 0 0;
+}
+.grid-box-2:nth-of-type(3) .line1 {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 2rem 0 0 0;
+}
+.grid-box-2:nth-of-type(4) .line1 {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 2rem 0 0 0;
+}
+
+
+.grid-box-2 .line2 {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-top:3rem;
+    padding-bottom: 10px;
+
+}
+
+.grid-box-2 .line3 {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    align-items: flex-end;
+    opacity: 0.6;
+    padding-bottom: 10px;
+
+}
+
+.grid-box-2 .line4 {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: light;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    opacity: 0.6;
+    padding-bottom: 10px;
+
+
+}
+.grid-box-2:nth-of-type(2) .line2:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+.grid-box-2:nth-of-type(2) .line3:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+.grid-box-2:nth-of-type(2) .line4:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+.grid-box-2:nth-of-type(2) .line3{
+    opacity: 1;
+}
+.grid-box-2:nth-of-type(2) .line4{
+    opacity: 1;
+}
+.grid-box-2:nth-of-type(3) .line4{
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 600;
+    opacity: 1;
+}
+.grid-box-2:nth-of-type(4) .line4{
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 600;
+    opacity: 1;
+    
+}
+
+
+
+/* footer{
+    padding: 2rem;
+    background-color: black;
+    color: white;
+     font-family: "Sora", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-style: light;
+} */
+
+.footer {
+  background-color: #0e0e0e; 
+  color: #aaa;
+  padding: 20px 40px;
+  font-family: sans-serif;
+}
+
+.footer-line {
+  height: 1px;
+  background-color: #444;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+
