@@ -52,9 +52,10 @@
     justify-content: center;
     margin-top: 5rem;
 }
-.cnct-box:hover{
+
+.cnct-box:hover {
     cursor: pointer;
-    
+
 }
 
 .contact {
@@ -301,7 +302,8 @@
 
 .project-grid {
     display: flex;
-    column-gap: 5rem;
+    gap: 5rem;
+    flex-wrap: wrap;
 
 }
 
@@ -342,7 +344,7 @@
     max-width: 100%;
     height: auto;
     display: block;
-    width: 40vh;
+    width: auto;
     padding-top: 80px;
 }
 
@@ -354,8 +356,6 @@
     padding: 0px;
 
 }
-
-
 
 .project-card:nth-of-type(2) {
     height: 50vh;
@@ -612,7 +612,7 @@
     display: flex;
     justify-content: center;
     margin-top: 5rem;
-    /* border: 2px solid red; */
+   
 
 }
 
@@ -733,7 +733,7 @@
 
 }
 
-.cnct-box-2:hover{
+.cnct-box-2:hover {
     cursor: pointer;
 }
 
@@ -758,37 +758,39 @@
     padding: 10px 20px 10px 20px;
 }
 
-.block-5{
+.block-5 {
     background-color: rgba(8, 8, 10, 1);
     height: auto;
 
 }
 
-.container5{
-color: white;
-display: flex;
-justify-content: center;
+.container5 {
+    color: white;
+    display: flex;
+    justify-content: center;
 
 }
 
 
-.contact-email{
+.contact-email {
     width: 80vw;
     padding-top: 2rem;
     font-family: "Sora", sans-serif;
 }
 
-.email{
+.email {
     color: white;
     font-family: "Sora", sans-serif;
     line-height: 100%;
     text-transform: capitalize;
 }
-.email .line1{
+
+.email .line1 {
     font-size: 12px;
     font-weight: 400;
 }
-.email .line2{
+
+.email .line2 {
     font-size: 40px;
     font-weight: 400;
     text-decoration: underline;
@@ -799,12 +801,12 @@ justify-content: center;
     /* border: 2px solid red; */
     display: grid;
     justify-content: center;
-   
+
 
 }
 
-.last-grid{
-     display: grid;
+.last-grid {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
     height: auto;
@@ -830,6 +832,7 @@ justify-content: center;
     text-transform: uppercase;
     padding: 2rem 0 0 0;
 }
+
 .grid-box-2:nth-of-type(2) .line1 {
     font-size: 12px;
     font-weight: 300;
@@ -839,6 +842,7 @@ justify-content: center;
     text-transform: uppercase;
     padding: 2rem 0 0 0;
 }
+
 .grid-box-2:nth-of-type(3) .line1 {
     font-size: 12px;
     font-weight: 300;
@@ -848,6 +852,7 @@ justify-content: center;
     text-transform: uppercase;
     padding: 2rem 0 0 0;
 }
+
 .grid-box-2:nth-of-type(4) .line1 {
     font-size: 12px;
     font-weight: 300;
@@ -865,7 +870,7 @@ justify-content: center;
     font-style: light;
     line-height: 100%;
     letter-spacing: 0%;
-    padding-top:3rem;
+    padding-top: 3rem;
     padding-bottom: 10px;
 
 }
@@ -896,71 +901,62 @@ justify-content: center;
 
 
 }
-.grid-box-2:nth-of-type(2) .line2:hover{
+
+.grid-box-2:nth-of-type(2) .line2:hover {
     cursor: pointer;
     font-weight: 600;
 }
-.grid-box-2:nth-of-type(2) .line3:hover{
+
+.grid-box-2:nth-of-type(2) .line3:hover {
     cursor: pointer;
     font-weight: 600;
 }
-.grid-box-2:nth-of-type(2) .line4:hover{
+
+.grid-box-2:nth-of-type(2) .line4:hover {
     cursor: pointer;
     font-weight: 600;
 }
-.grid-box-2:nth-of-type(2) .line3{
+
+.grid-box-2:nth-of-type(2) .line3 {
     opacity: 1;
 }
-.grid-box-2:nth-of-type(2) .line4{
+
+.grid-box-2:nth-of-type(2) .line4 {
     opacity: 1;
 }
-.grid-box-2:nth-of-type(3) .line4{
+
+.grid-box-2:nth-of-type(3) .line4 {
     font-size: 14px;
     text-decoration: underline;
     font-weight: 600;
     opacity: 1;
 }
-.grid-box-2:nth-of-type(4) .line4{
+
+.grid-box-2:nth-of-type(4) .line4 {
     font-size: 14px;
     text-decoration: underline;
     font-weight: 600;
     opacity: 1;
-    
+
 }
-
-
-
-/* footer{
-    padding: 2rem;
-    background-color: black;
-    color: white;
-     font-family: "Sora", sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 100%;
-    letter-spacing: 0%;
-    font-style: light;
-} */
 
 .footer {
-  background-color: #0e0e0e; 
-  color: #aaa;
-  padding: 20px 40px;
-  font-family: sans-serif;
+    background-color: #0e0e0e;
+    color: #aaa;
+    padding: 20px 40px;
+    font-family: sans-serif;
 }
 
 .footer-line {
-  height: 1px;
-  background-color: #444;
-  width: 100%;
-  margin-bottom: 20px;
+    height: 1px;
+    background-color: #444;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-
