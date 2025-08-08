@@ -2,6 +2,8 @@
 
 /* Extra small devices (portrait phones, less than 400px) */
 @media (max-width: 399px) {
+  
+
 
   .lines {
     font-size: 20px;
