@@ -1007,7 +1007,7 @@ body {
     width: 80vw;
   }
 
-  .testimonials {
+  /* .testimonials {
     width: 90vw;
   }
 
@@ -1020,6 +1020,40 @@ body {
     font-size: 12px;
     padding: 0.5rem 0 0.5rem 0;
     line-height: 150%;
+  } */
+
+  
+  .enterprices {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Stack the cards vertically */
+    row-gap: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .grid-box {
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-box .line1 {
+    font-size: 18px;
+    padding: 1.5rem 0 0.5rem 0;
+  }
+
+  .grid-box .line2 {
+    font-size: 14px;
+    padding: 0.5rem 0 0.5rem 0;
+    line-height: 150%;
+  }
+
+  .grid-box .line3,
+  .grid-box .line4 {
+    font-size: 12px;
+    opacity: 0.7;
+    text-align: center;
+    display: block;
   }
 
   .grid-box .line3,
@@ -1028,6 +1062,10 @@ body {
     opacity: 0.7;
     /* text-align: center; */
     display: block;
+  }
+  .section-title{
+    display: flex;
+    justify-content: center;
   }
 
   .email .line2 {

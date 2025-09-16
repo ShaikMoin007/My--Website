@@ -358,10 +358,10 @@ html, body {
     margin-top: 60px;
 }
 
-.blue { background-color: #77ace0; }
-.dark-blue { background-color: #11263F; }
+.blue { background-color:  #1A1A1A; }
+.dark-blue { background-color:  #1A1A1A; }
 .dark { background-color: #1A1A1A; }
-.teal { background-color: #85e0d0; }
+.teal { background-color:  #1A1A1A; }
 
 .block-3{
     background-color: black;
@@ -643,6 +643,7 @@ html, body {
 .card-title .l2 {
     text-align: center;
 }
+
 
 .cnct-box-2 {
     color: white;
