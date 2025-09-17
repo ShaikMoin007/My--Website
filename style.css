@@ -27,7 +27,6 @@ html, body {
 .lines {
     color: white;
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 46px;
     text-transform: capitalize;
     margin-top: 8rem;
 }
@@ -35,41 +34,31 @@ html, body {
 .line1 {
     font-weight: 300;
     font-style: light;
+    font-size: 13px;
+    color:  #A9FFCA;
 }
 
 .line2 {
+    font-size: 46px;
     font-weight: 800;
     font-style: bold;
+    padding: 5px;
 
 }
 
 .line3 {
     font-weight: 300;
+    font-size:15px ;
     font-style: light;
-    text-align: right;
-}
-
-.cnct-box {
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-}
-
-.cnct-box:hover {
-    cursor: pointer;
+    width: 50vw;
 
 }
-
 .contact {
-    height: auto;
-    width: auto;
-    border: 2px solid white;
-    border-radius: 120px;
     display: flex;
-    justify-content: center;
-    background-color: white;
+    justify-content: flex-start; /* align left */
     align-items: center;
+    gap: 20px; /* space between buttons */
+    margin-top: 20px; /* little spacing under text */
 }
 
 .call {
@@ -77,12 +66,89 @@ html, body {
     font-size: 16px;
     font-weight: 400;
     color: black;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 120px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
+
+.call:hover {
+    background-color: #00AEEF;
+    color: white;
+    border-color: #00AEEF;
+}
+.cnct-box {
+    color: white;
+    display: flex;
+    justify-content:center;
+    margin-top: 1.5rem;
+    padding-right: 20vw;
+}
+
+
 
 .container2 {
     display: grid;
     justify-content: center;
+}
+.experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  width: 65vw;
+  margin: 2rem auto 6px;
+}
+
+.experience-card {
+  background:  #1d1d1c;
+  border-radius: 20px;
+   border: 2px solid rgba(255, 247, 233, 0.05);
+  padding: 20px;
+  color: #fff;
+  font-family: "Sora", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.card-header .title a {
+  text-decoration: none;
+  color: #A9FFCA;
+  transition: color 0.3s ease;
+}
+
+.card-header .title a:hover {
+  color: #67e8f9;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.card-footer {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  background: #1e293b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #a5f3fc;
 }
 
 
@@ -92,7 +158,6 @@ html, body {
     grid-template-rows: 1fr 1fr;
     height: auto;
     width: 65vw;
-    margin-top: 5rem;
     grid-gap: 6px;
 }
 
@@ -122,6 +187,7 @@ html, body {
 }
 
 .box:nth-of-type(1) .B {
+    /* color:  #A9FFCA; */
     font-size: 17px;
     align-items: center;
     font-family: "Sora", sans-serif;
@@ -133,6 +199,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .box:nth-of-type(3) {
@@ -149,14 +216,18 @@ html, body {
     font-size: 32px;
     align-items: flex-start;
     padding: 20px 0px 0px 27px;
+    color: white; 
+
 
 }
 
 .box:nth-of-type(3) .B {
     font-weight: 100;
-    font-size: 20px;
+    font-size: 18px;
     font-style: light;
     padding: 15px 0px 0px 27px;
+    /* color:  #A9FFCA; */
+
 
 
 }
@@ -190,6 +261,8 @@ html, body {
     font-family: "Sora", sans-serif;
     font-weight: 400;
     line-height: 100%;
+    /* color:  #A9FFCA; */
+
 }
 
 .box:nth-of-type(5) {
@@ -219,6 +292,8 @@ html, body {
     font-size: 17px;
     font-weight: 400;
     line-height: 100%;
+    /* color:  #A9FFCA; */
+
 }
 
 .company-box {
@@ -281,6 +356,7 @@ html, body {
     font-weight: 300;
     font-style: light;
     line-height: 100%;
+    color: black;
 
 }
 
@@ -384,6 +460,7 @@ html, body {
 .solutions .page-title .line1 {
     font-weight: 300;
     font-size: light;
+    font-size: 35px;
 
 }
 
