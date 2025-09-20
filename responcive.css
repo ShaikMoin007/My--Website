@@ -351,53 +351,400 @@ img {
     grid-template-columns: 1fr;
   }
   .section-title {
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
   }
 }
 @media (max-width: 420px){
   .section-title{
-    font-size: 25px;
+    font-size: 23px;
   }
   .grid-box .line1{
-    font-size: 15px;
+    font-size: 14px;
   }
   .grid-box .line2{
-    font-size: 11px;
+    font-size: 10px;
   }
   .grid-box .line3{
-    font-size: 9px;
+    font-size: 8px;
   }
   .grid-box .line4{
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 /* share your idea */
-@media (max-width: 755px){
-  .card-title{
-    font-size: 26px;
-  }
+/* Large desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .card-title {
+        font-size: 36px;
+        padding: 6rem 6rem 2rem 6rem;
+    }
+
+    .call-2 {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
 }
-@media (max-width: 600px){
-   .card-title{
-    font-size: 20px;
-  }
+
+/* Desktops / Laptops (992px – 1199px) */
+@media (max-width: 1199px) {
+    .card-title {
+        font-size: 32px;
+        padding: 5rem 4rem 2rem 4rem;
+    }
+
+    .call-2 {
+        font-size: 13px;
+        padding: 10px 22px;
+    }
 }
+
+/* Tablets (768px – 991px) */
+@media (max-width: 991px) {
+    .card-title {
+        font-size: 28px;
+        line-height: 110%;
+        padding: 4rem 3rem 1.5rem 3rem;
+        text-align: center;
+    }
+
+    .card-title .l1,
+    .card-title .l2 {
+        text-align: center;
+    }
+
+    .contact-2 {
+        border-radius: 80px;
+    }
+
+    .call-2 {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile devices (576px – 767px) */
+@media (max-width: 767px) {
+    .card-title {
+        font-size: 22px;
+        padding: 3rem 2rem 1.5rem 2rem;
+        text-align: center;
+    }
+
+    .card-title .l1,
+    .card-title .l2 {
+        text-align: center;
+        display: block;
+    }
+
+    .contact-2 {
+        border-radius: 60px;
+    }
+
+    .call-2 {
+        font-size: 12px;
+        padding: 8px 18px;
+    }
+}
+
+/* Extra small devices (below 576px) */
+@media (max-width: 575px) {
+    .card-title {
+        font-size: 18px;
+        padding: 2rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+
+    .card-title .l1,
+    .card-title .l2 {
+        text-align: center;
+        display: block;
+    }
+
+    .contact-2 {
+        border-radius: 50px;
+    }
+
+    .call-2 {
+        font-size: 11px;
+        padding: 6px 14px;
+    }
+}
+
+/* ===========================
+   Responsive.css (for .block-5)
+   Keeps the design intact
+   =========================== */
+
+/* Large desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .email .line1 {
+        font-size: 14px;
+    }
+
+    .email .line2 {
+        font-size: 42px;
+    }
+}
+
+/* Desktops / Laptops (992px – 1199px) */
+@media (max-width: 1199px) {
+    .email .line1 {
+        font-size: 13px;
+    }
+
+    .email .line2 {
+        font-size: 38px;
+    }
+}
+
+/* Tablets (768px – 991px) */
+@media (max-width: 991px) {
+    .contact-email {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .email .line1 {
+        font-size: 12px;
+    }
+
+    .email .line2 {
+        font-size: 32px;
+        padding: 1.5rem 0 3rem 0;
+        word-break: break-word;
+    }
+}
+
+/* Mobile devices (576px – 767px) */
+@media (max-width: 767px) {
+    .contact-email {
+        width: 95vw;
+        text-align: center;
+    }
+
+    .email .line1 {
+        font-size: 11px;
+    }
+
+    .email .line2 {
+        font-size: 26px;
+        padding: 1.5rem 0 2.5rem 0;
+    }
+}
+
+/* Extra small devices (below 576px) */
+@media (max-width: 575px) {
+    .contact-email {
+        width: 100%;
+        text-align: center;
+    }
+
+    .email .line1 {
+        font-size: 10px;
+    }
+
+    .email .line2 {
+        font-size: 22px;
+        padding: 1rem 0 2rem 0;
+    }
+}
+
 
 /* -------- Last Grid (Footer Top Section) -------- */
-@media (max-width: 1024px) {
-  .last-grid {
-    grid-template-columns: 1fr 1fr;
-    width: 90vw;
-  }
+/* ===========================
+   Responsive.css for Footer (Clean layout below 420px)
+   =========================== */
+
+/* Large desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .last-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .grid-box-2 .line2 {
+        font-size: 16px;
+    }
+
+    .grid-box-2 .line3, .grid-box-2 .line4 {
+        font-size: 14px;
+    }
+
+    .grid-box-2:nth-of-type(2) .line1 {
+        font-size: 12px;
+    }
+
+    .grid-box-2:nth-of-type(3) .line1 {
+        font-size: 12px;
+    }
+
+    .grid-box-2:nth-of-type(4) .line1 {
+        font-size: 12px;
+    }
 }
 
-@media (max-width: 600px) {
-  .last-grid {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-  }
+/* Desktops / Laptops (992px – 1199px) */
+@media (max-width: 1199px) {
+    .last-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1.5rem;
+    }
+
+    .grid-box-2 .line2 {
+        font-size: 15px;
+    }
+
+    .grid-box-2 .line3, .grid-box-2 .line4 {
+        font-size: 13px;
+    }
+
+    .grid-box-2:nth-of-type(2) .line1 {
+        font-size: 11px;
+    }
+
+    .grid-box-2:nth-of-type(3) .line1 {
+        font-size: 11px;
+    }
+
+    .grid-box-2:nth-of-type(4) .line1 {
+        font-size: 11px;
+    }
 }
+
+/* Tablets (768px – 991px) */
+@media (max-width: 991px) {
+    .last-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .grid-box-2 .line2 {
+        font-size: 14px;
+    }
+
+    .grid-box-2 .line3, .grid-box-2 .line4 {
+        font-size: 12px;
+    }
+
+    .grid-box-2:nth-of-type(2) .line1 {
+        font-size: 10px;
+    }
+
+    .grid-box-2:nth-of-type(3) .line1 {
+        font-size: 10px;
+    }
+
+    .grid-box-2:nth-of-type(4) .line1 {
+        font-size: 10px;
+    }
+}
+
+/* Mobile devices (576px – 767px) */
+@media (max-width: 767px) {
+    .last-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .grid-box-2 .line2 {
+        font-size: 13px;
+        padding-top: 1.5rem;
+        padding-bottom: 6px;
+    }
+
+    .grid-box-2 .line3, .grid-box-2 .line4 {
+        font-size: 11px;
+        padding-bottom: 6px;
+    }
+
+    .grid-box-2:nth-of-type(2) .line1 {
+        font-size: 9px;
+    }
+
+    .grid-box-2:nth-of-type(3) .line1 {
+        font-size: 9px;
+    }
+
+    .grid-box-2:nth-of-type(4) .line1 {
+        font-size: 9px;
+    }
+
+    .grid-box-2 .line1 img {
+        width: 70px; /* Adjust image size for smaller screens */
+    }
+}
+
+/* Extra small devices (below 576px) */
+@media (max-width: 575px) {
+    .last-grid {
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 1rem;
+    }
+
+    .grid-box-2 .line2 {
+        font-size: 12px;
+        padding-top: 1rem;
+        padding-bottom: 5px;
+    }
+
+    .grid-box-2 .line3, .grid-box-2 .line4 {
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+
+    .grid-box-2:nth-of-type(2) .line1 {
+        font-size: 8px;
+    }
+
+    .grid-box-2:nth-of-type(3) .line1 {
+        font-size: 8px;
+    }
+
+    .grid-box-2:nth-of-type(4) .line1 {
+        font-size: 8px;
+    }
+
+    .grid-box-2 .line1 img {
+        width: 60px; /* Further adjust image size for smaller screens */
+    }
+}
+
+/* Extra small screens below 420px (More spacious layout) */
+@media (max-width: 420px) {
+    .last-grid {
+        grid-template-columns: 1fr 1fr;  /* Switch to a single column */
+        column-gap: 0.5rem;
+    }
+
+    .grid-box-2 .line2 {
+        font-size: 10px;  /* Reduce font size for better spacing */
+        padding-top: 1rem;
+        padding-bottom: 3px;  /* Reduce padding */
+    }
+
+    .grid-box-2 .line3, .grid-box-2 .line4 {
+        font-size: 8px;  /* Further reduce font size */
+        padding-bottom: 3px;
+    }
+
+    .grid-box-2:nth-of-type(2) .line1 {
+        font-size: 6px;  /* Reduce font size of titles */
+    }
+
+    .grid-box-2:nth-of-type(3) .line1 {
+        font-size: 6px;
+    }
+
+    .grid-box-2:nth-of-type(4) .line1 {
+        font-size: 6px;
+    }
+
+    .grid-box-2 .line1 img {
+        width: 40px;  /* Adjust image size even more for tiny screens */
+    }
+}
+
 
 /* -------- Footer -------- */
 @media (max-width: 900px) {
