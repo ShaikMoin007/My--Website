@@ -17,7 +17,7 @@ body {
     background-image: url(https://raw.githubusercontent.com/ShaikMoin007/my-assests/refs/heads/main/black%20wavy%20bg.jpg);
     background-color: black;
     background-size: cover;
-    opacity: 0, 5;
+
 }
 
      nav {
@@ -78,28 +78,27 @@ body {
   margin-right: 20px;
   user-select: none;
 }
-
-.container {
+.intro-container {
     display: flex;
     justify-content: center;
 
 }
 
-.lines {
+.intro-lines {
     color: white;
     font-family: "Bricolage Grotesque", sans-serif;
     text-transform: capitalize;
     margin-top: 5rem;
 }
 
-.line1 {
+.intro-headline {
     font-weight: 300;
     font-style: light;
     font-size: 13px;
     color: #A9FFCA;
 }
 
-.line2 {
+.intro-name {
     font-size: 46px;
     font-weight: 800;
     font-style: bold;
@@ -107,15 +106,14 @@ body {
 
 }
 
-.linee3 {
+.intro-bio {
     font-weight: 300;
     font-size: 15px;
     font-style: light;
     width: 50vw;
 
 }
-
-.contact {
+.contact-links {
     display: flex;
     justify-content: flex-start;
     /* align left */
@@ -126,7 +124,7 @@ body {
     /* little spacing under text */
 }
 
-.call {
+.contact-btn {
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -139,22 +137,19 @@ body {
     transition: all 0.3s ease;
 }
 
-.call:hover {
+.contact-btn:hover {
     background-color: #00AEEF;
     color: white;
     border-color: #00AEEF;
 }
 
-.cnct-box {
+.contact-box {
     color: white;
     display: flex;
     justify-content: center;
     margin-top: 1.5rem;
     padding-right: 20vw;
 }
-
-
-
 .container2 {
     display: grid;
     justify-content: center;
@@ -217,9 +212,8 @@ body {
     font-size: 13px;
     color: #a5f3fc;
 }
-
-
-.content-box {
+/* Shared section styles */
+.stats-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -228,141 +222,100 @@ body {
     grid-gap: 6px;
 }
 
-.box {
-    
+.stats-card {
     background-color: #1d1d1c;
     border: 2px solid rgba(255, 247, 233, 0.05);
     border-radius: 20px;
     opacity: 0.96;
     color: white;
-}
-
-.box:nth-of-type(1) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.box:nth-of-type(1) .A {
-    font-size: 58px;
-    align-items: center;
+/* Projects & Clients cards */
+.stats-projects .stats-title,
+.stats-clients .stats-title {
+    font-size: 58px; 
     font-family: "Sora", sans-serif;
     font-weight: 400;
-    padding: 2px;
     line-height: 100%;
+    margin-bottom: 6px;
 }
 
-.box:nth-of-type(1) .B {
-    
+.stats-projects .stats-subtitle,
+.stats-clients .stats-subtitle {
     font-size: 17px;
-    align-items: center;
     font-family: "Sora", sans-serif;
     font-weight: 400;
     line-height: 100%;
 }
 
-.box:nth-of-type(2) {
+/* Logo card */
+.stats-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.box:nth-of-type(3) {
+/* About card */
+.stats-about {
     grid-row: 1/3;
     grid-column: 3/4;
-    width: 28vw;
+    width: auto;
     font-family: "Sora", sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px;
+    text-align: left;
 }
 
-.box:nth-of-type(3) .A {
+/* About card fix */
+.stats-about .stats-title {
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 12px;
+  word-wrap: break-word;    /* ensures long words break */
+  word-break: break-word;   /* forces breaking if needed */
+  white-space: normal;      /* allows text to wrap */
+  line-height: 1.3;         /* better spacing */
+}
+
+
+.stats-about .stats-subtitle {
     font-weight: 300;
-    font-size: 32px;
-    align-items: flex-start;
-    padding: 20px 0px 0px 27px;
-    color: white;
-
-
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.box:nth-of-type(3) .B {
-    font-weight: 100;
-    font-size: 18px;
-    font-style: light;
-    padding: 15px 0px 0px 27px;
-  
-
-
-}
-
-.box:nth-of-type(3) .C {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-
-.box:nth-of-type(4) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.box:nth-of-type(4) .A {
-    font-size: 58px;
-    align-items: center;
+/* Experience card */
+.stats-experience .stats-title {
     font-family: "Sora", sans-serif;
     font-weight: 400;
-    padding: 2px;
-    line-height: 100%;
-}
-
-.box:nth-of-type(4) .B {
-    font-size: 17px;
-    align-items: center;
-    font-family: "Sora", sans-serif;
-    font-weight: 400;
-    line-height: 100%;
-    
-
-}
-
-.box:nth-of-type(5) {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 6px;
 }
 
-.box:nth-of-type(5) .A {
-    align-items: center;
-    font-family: "Sora", sans-serif;
-    font-weight: 400;
-}
-
-.number {
+.stats-number {
     font-size: 60px;
+    font-weight: 500;
 }
 
-.label {
-    font-size: 15px;
+.stats-label {
+    font-size: 16px;
 }
 
-.box:nth-of-type(5) .B {
-    align-items: center;
+.stats-experience .stats-subtitle {
     font-family: "Sora", sans-serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 100%;
-   
-
 }
-
-.company-box {
+.tech-stack {
     display: grid;
     justify-content: center;
     background: url(https://raw.githubusercontent.com/ShaikMoin007/my-assests/refs/heads/main/blob.png);
@@ -372,8 +325,8 @@ body {
     opacity: 1;
 }
 
-.partners {
-    opacity: 0.9;
+.tech-wrapper {
+    opacity: 0.8;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -388,19 +341,18 @@ body {
     margin-bottom: 7rem;
 }
 
-.partners p {
+.tech-title {
     font-family: "Sora", sans-serif;
     font-size: 35px;
     font-weight: 400;
     color: #A9FFCA;
 }
 
-.companies {
+.tech-section {
     padding: 2rem;
-
 }
 
-.company-icon {
+.tech-icons {
     margin: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -411,7 +363,7 @@ body {
     margin-bottom: auto;
 }
 
-.companies img {
+.tech-section img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -419,21 +371,53 @@ body {
     opacity: 0.7;
     width: 90px;
 }
-
-.block-2 {
-    background-image: url(https://raw.githubusercontent.com/ShaikMoin007/my-assests/refs/heads/main/black%20wavy%20bg.jpg);
+/* .block-2 {
+    background-image: url(https://raw.githubusercontent.com/ShaikMoin007/my-assests/refs/heads/main/black%20wavy%20bg.jpg) ;
     background-color: black;
     background-size: cover;
     opacity: 0, 2;
+    background-position: center top;
+    
+} */
+.container3 {
+    display: grid;
+    justify-content: center;
 }
+
+.solutions {
+    display: flex;
+    justify-content: center;
+    font-family: "Sora", sans-serif;
+}
+
+.solutions .page-title {
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 3rem;
+
+}
+
+.solutions .page-title .page-heading {
+    font-weight: 300;
+    font-size: light;
+    font-size: 35px;
+    background-color: #1d1d1c;
+    border: 2px solid rgba(255, 247, 233, 0.05);
+    border-radius: 35px;
+    opacity: 0.96;
+    color: white;
+    padding: 15px;
+
+}
+
 
 .highlights {
     text-align: center;
     /* margin-top: 4rem; */
-
 }
 
-.highlights .line1 {
+.highlights .highlights-title {
     font-family: "Sora", sans-serif;
     font-size: 42px;
     font-weight: 300;
@@ -441,24 +425,19 @@ body {
     line-height: 100%;
     color: white;
     padding: 3rem 0 0 0;
-
 }
 
-.highlights .line1 span {
+.highlights .highlights-title span {
     font-weight: 600;
 }
 
-.highlights .line2 {
+.highlights .highlights-subtitle {
     font-family: "Sora", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 100%;
     color: white;
-
 }
-
-
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -540,48 +519,10 @@ body {
     background-color: #50454521;
 }
 
-.block-3 {
-    background-color: black;
-}
-
-.solutions {
+.testimonials-section {
     display: flex;
     justify-content: center;
-    font-family: "Sora", sans-serif;
-}
-
-.solutions .page-title {
-    color: white;
-    font-size: 40px;
-    text-transform: capitalize;
-    margin-top: 3rem;
-
-}
-
-.solutions .page-title .line1 {
-    font-weight: 300;
-    font-size: light;
-    font-size: 35px;
-    background-color: #1d1d1c;
-    border: 2px solid rgba(255, 247, 233, 0.05);
-    border-radius: 35px;
-    opacity: 0.96;
-    color: white;
-    padding: 15px;
-
-}
-
-.container3 {
-    display: grid;
-    justify-content: center;
-}
-
-.container4 {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-
-
+    /* margin-top: 5rem; */
 }
 
 .testimonials {
@@ -590,34 +531,31 @@ body {
     font-family: "Sora", sans-serif;
 }
 
-.section-title {
+.testimonials-title {
     color: white;
     font-family: "Sora", sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 100%;
     text-transform: capitalize;
-
 }
 
-.enterprices {
+.testimonials-list {
     /* border: 2px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
     height: auto;
     padding-top: 2rem;
-
 }
 
-.grid-box {
+.testimonial-card {
     /* border: 2px solid white; */
     color: white;
     margin-bottom: 3rem;
 }
 
-
-.grid-box .line1 {
+.testimonial-card .testimonial-company {
     font-size: 20px;
     font-weight: 400;
     font-style: light;
@@ -625,21 +563,18 @@ body {
     letter-spacing: 0%;
     text-transform: uppercase;
     padding: 2rem 0 1rem 0;
-
 }
 
-
-.grid-box .line2 {
+.testimonial-card .testimonial-quote {
     font-size: 16px;
     font-weight: 300;
     font-style: light;
     line-height: 100%;
     letter-spacing: 0%;
     padding: 1rem 0 1rem 0;
-
 }
 
-.grid-box .line3 {
+.testimonial-card .testimonial-author {
     text-align: left;
     font-size: 14px;
     font-weight: 400;
@@ -651,7 +586,7 @@ body {
     opacity: 0.6;
 }
 
-.grid-box .line4 {
+.testimonial-card .testimonial-role {
     font-size: 14px;
     font-weight: 400;
     font-style: light;
@@ -659,10 +594,9 @@ body {
     letter-spacing: 0%;
     text-transform: uppercase;
     opacity: 0.6;
-
 }
 
-.block-4 {
+.block-3 {
     background-image: url(https://raw.githubusercontent.com/ShaikMoin007/my-assests/refs/heads/main/8b42d70ed7dc0bc3f70ddc32686761249ba359cb.png);
     background-color: black;
     background-size: cover;
@@ -670,14 +604,12 @@ body {
     padding-bottom: 2rem;
 
 }
-
-.container5 {
+.cta-section {
     display: flex;
     justify-content: center;
-
 }
 
-.card-title {
+.cta-title {
     /* background-color: rgba(255, 255, 255, 1); */
     color: white;
     align-items: center;
@@ -690,23 +622,20 @@ body {
     padding: 6rem 6rem 2rem 6rem;
 }
 
-.card-title .l2 {
+.cta-title .cta-line2 {
     text-align: center;
 }
-
-
-.cnct-box-2 {
+.contact-section {
     color: white;
     display: flex;
     justify-content: center;
-
 }
 
-.cnct-box-2:hover {
+.contact-section:hover {
     cursor: pointer;
 }
 
-.contact-2 {
+.contact-wrapper {
     height: auto;
     width: auto;
     border: 2px solid white;
@@ -717,7 +646,7 @@ body {
     align-items: center;
 }
 
-.call-2 {
+.contact-btn {
     font-family: "Sora", sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -726,186 +655,109 @@ body {
     letter-spacing: 0%;
     padding: 10px 20px 10px 20px;
 }
-
-.block-5 {
+.block-4 {
     background-color: rgba(8, 8, 10, 1);
     height: auto;
-
 }
 
-.container5 {
-    color: white;
-    display: flex;
-    justify-content: center;
-
-}
-
-
-.contact-email {
-    width: 80vw;
-    padding-top: 2rem;
-    font-family: "Sora", sans-serif;
-}
-
-.email {
-    color: white;
-    font-family: "Sora", sans-serif;
-    line-height: 100%;
-    text-transform: capitalize;
-}
-
-.email .line1 {
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.email .line2 {
-    font-size: 40px;
-    font-weight: 400;
-    text-decoration: underline;
-    padding: 2rem 0 4rem 0;
-  
-}
-
-.last-container {
-    /* border: 2px solid red; */
+.footer-section {
     display: grid;
     justify-content: center;
-
-
 }
 
-.last-grid {
+.footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
-    height: auto;
     width: 80vw;
     margin-top: 3rem;
     font-family: "Sora", sans-serif;
 }
 
-.grid-box-2 {
-    /* border: 2px solid white; */
+.footer-card {
     color: white;
     margin-bottom: 3rem;
     font-family: "Sora", sans-serif;
 }
 
-
-
-.grid-box-2:nth-of-type(2) .line1 {
-    font-size: 12px;
-    font-weight: 300;
-    font-style: light;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    padding: 2rem 0 0 0;
-}
-
-.grid-box-2:nth-of-type(3) .line1 {
-    font-size: 12px;
-    font-weight: 300;
-    font-style: light;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    padding: 2rem 0 0 0;
-}
-
-.grid-box-2:nth-of-type(4) .line1 {
-    font-size: 12px;
-    font-weight: 300;
-    font-style: light;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    padding: 2rem 0 0 0;
-}
-.grid-box-2 .line1 img{
+/* Logo + description */
+.footer-logo img {
     border: 2px solid white;
     border-radius: 25px;
 }
 
-
-.grid-box-2 .line2 {
+.footer-description {
     font-size: 16px;
     font-weight: 300;
-    font-style: light;
-    line-height: 100%;
-    letter-spacing: 0%;
     padding-top: 3rem;
-    padding-bottom: 10px;
-
+    line-height: 1.4;
 }
 
-.grid-box-2 .line3 {
-    text-align: left;
+/* Section headings (Quick Links, Our Office) */
+.footer-heading {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 2rem 0 1rem 0;
+    color: #A9FFCA; /* green highlight like before */
+}
+
+/* Quick Links */
+.footer-links .footer-link {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: font-weight 0.3s ease;
+}
+
+.footer-links .footer-link:hover {
+    font-weight: 600;
+}
+
+/* Office Info */
+.footer-office .footer-location {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 10px;
+}
+
+.footer-office .footer-address {
     font-size: 14px;
     font-weight: 400;
-    font-style: light;
-    line-height: 100%;
-    letter-spacing: 0%;
     text-transform: uppercase;
-    align-items: flex-end;
-    opacity: 0.6;
+    opacity: 0.8;
     padding-bottom: 10px;
-
 }
 
-.grid-box-2 .line4 {
+.footer-office .footer-phone {
     font-size: 14px;
-    font-weight: 400;
-    font-style: light;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    opacity: 0.6;
+    font-weight: 600;
+    text-decoration: underline;
+    opacity: 1;
     padding-bottom: 10px;
-
-
+}
+.site-footer {
+    background-color: #0e0e0e;
+    color: #aaa;
+    padding: 20px 40px;
+    font-family: sans-serif;
 }
 
-.grid-box-2:nth-of-type(2) .line2:hover {
-    cursor: pointer;
-    font-weight: 600;
-    
+.footer-divider {
+    height: 1px;
+    background-color: #444;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.grid-box-2:nth-of-type(2) .line3:hover {
-    cursor: pointer;
-    font-weight: 600;
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-.grid-box-2:nth-of-type(2) .line4:hover {
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.grid-box-2:nth-of-type(2) .line3 {
-    opacity: 1;
-}
-
-.grid-box-2:nth-of-type(2) .line4 {
-    opacity: 1;
-}
-
-.grid-box-2:nth-of-type(3) .line4 {
-    font-size: 14px;
-    text-decoration: underline;
-    font-weight: 600;
-    opacity: 1;
-}
-
-.grid-box-2:nth-of-type(4) .line4 {
-    font-size: 14px;
-    text-decoration: underline;
-    font-weight: 600;
-    opacity: 1;
-
-}
-
 .footer {
     background-color: #0e0e0e;
     color: #aaa;
@@ -926,3 +778,4 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
