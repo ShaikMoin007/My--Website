@@ -595,6 +595,23 @@ body {
     text-transform: uppercase;
     opacity: 0.6;
 }
+.feedback-section{
+    display: flex;
+    justify-content: center;
+}
+.feedback-wrapper{
+    width: 80vw;
+    margin-top: 10vh;
+}
+.feedback-email{
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.feedback-title{
+    color: #A9FFCA;
+}
+.feedback-address{
+    color: white;   
+}
 
 .block-3 {
     background-image: url(https://raw.githubusercontent.com/ShaikMoin007/my-assests/refs/heads/main/8b42d70ed7dc0bc3f70ddc32686761249ba359cb.png);
