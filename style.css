@@ -739,6 +739,10 @@ body {
     padding-top: 1rem;
     padding-bottom: 10px;
 }
+.footer-location-2{
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
 
 .footer-office .footer-address {
     font-size: 14px;
@@ -795,4 +799,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-
+.experience-card a{
+    color: #A9FFCA;
+    text-decoration: none;
+}
+.experience-card a:hover {
+  color:#00AEEF;
+}
